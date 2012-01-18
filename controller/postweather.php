@@ -3,7 +3,8 @@
 include_once '../includes/config.php';
 if ($_POST['city']) {
     $city=  urlencode($_POST['city']);
-    $url = WeatherForecastURL . "?key=" . WeatherKeyAPI . "&q=" .$city  . "&format=json";
+    $num_of_days=$_POST['days']?"&num_of_days=2":"";
+    $url = WeatherForecastURL . "?key=" . WeatherKeyAPI . "&q=" .$city  . "&format=json".$num_of_days;
     $response_weather = file_get_contents($url);
     echo $response_weather;
     /*$response_weather = json_decode($response_weather, true);
