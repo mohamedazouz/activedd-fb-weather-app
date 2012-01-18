@@ -22,9 +22,11 @@ include 'includes/config.php';
                 for(i=0;i<cities.length;i++){
                     $.post("controller/postweather.php", {"city":cities[i]}, function(response){
                         page={
-                            "name":"Prog Mania",
-                            "access_token":"AAAEHmwroyiYBAMcy1aHquy9gRiYvEqkmTJc5YJZCoviwrkY3BmKPBgZCkxpvgCmoWJZAZAzZBBRkhhXzjZCKsiJWpgZBHDvpdCOHdRJmp2cmAZDZD",
-                            "id":"103332079703347"
+                            /*"name":"Prog Mania",
+                            "access_token":"AAAEHmwroyiYBAMcy1aHquy9gRiYvEqkmTJc5YJZCoviwrkY3BmKPBgZCkxpvgCmoWJZAZAzZBBRkhhXzjZCKsiJWpgZBHDvpdCOHdRJmp2cmAZDZD",*/
+                            "name":"All About Egypt",
+                            "access_token":"AAAEHmwroyiYBAAbSGPm4ZAbGq9XLH096e5WHn9COZBBXJMZC2ffSEpba2i0WcJFGAlGy9waudz8Yo5EV31kgTGh7cxYCZBIaqlBrHz90FAZDZD",
+                            "id":"195035983885974"
                         }
                         if(response.data.error){
                             alert("Wrong City");
