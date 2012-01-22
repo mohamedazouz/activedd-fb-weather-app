@@ -19,7 +19,8 @@ foreach ($cities as $city) {
     $response_weather = file_get_contents($url);
     $response_weather = json_decode($response_weather, true);
     $jsonData = array();
-    $jsonData['message'] = "Lastest Weather Observation Provided by {$page['name']}";
+    $message=$lang==0?"Latest weather updates Brought to you  by ":"‫أخر أخبار الطقس و الحاله الجويه‬ من  ";
+    $jsonData['message'] = "$message{$page['name']}";
     $jsonData['link'] = "https://www.facebook.com/pages/{$page['name']}/{$page['id']}?sk=app_" . FACEBOOK_APPLICATION_ID;
     $name = $response_weather["data"]["request"][0]["query"];
     $jsonData['name'] = $name;
