@@ -68,7 +68,7 @@
                                         "page_id":$("#facebook_pages > option:selected").attr("id"),
                                         "page_name":$("#facebook_pages > option:selected").attr("n"),
                                         "page_access_token":$("#facebook_pages").val(),
-                                        "city":$("#city > option:selected").attr("n").capitalize()+","+$("#country_id > option:selected").attr("n").capitalize(),
+                                        "city":$("#city > option:selected").val(),
                                         "text":$("#lang").val()==1?"Latest weather updates Brought to you  by ":"‫أخر أخبار الطقس و الحاله الجويه‬ من  ",
                                         "hour":$("#hour").val(),
                                         "min":$("#min").val()
@@ -160,7 +160,7 @@
                 ?>
                 </select>
                 <select id="min">
-                    <option value="" >Select Hour</option>
+                    <option value="" >Select Min</option>
                 <?php
                     for ($i = 0; $i <= 59; $i++) {
                         echo "<option value='$i'>$i</option>";

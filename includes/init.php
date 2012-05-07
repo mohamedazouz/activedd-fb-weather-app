@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 // includes
 require_once 'config.php';
 

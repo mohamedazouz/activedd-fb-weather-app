@@ -1,0 +1,2 @@
+ALTER TABLE  `post_timer` CHANGE  `page_access_token`  `page_access_token` VARCHAR( 200 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+ALTER TABLE  `post_timer` CHANGE  `page_id`  `page_id` VARCHAR( 100 ) NOT NULL
