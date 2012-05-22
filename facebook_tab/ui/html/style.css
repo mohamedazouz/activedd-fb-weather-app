@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	width:520px;
+	margin:0;
+	height:600px;
+}
+.container {
+	width:520px;
+	margin:50px auto 0 auto;
+}
+.select_country {
+	margin-bottom:5px;position: relative;overflow: hidden;
+}
+.select_country label {
+	float: right;
+font-size: 13px;
+color: #4396CF;
+font-family: Arial;
+margin-left: 15px;
+margin-top: 7px;
+}
+.select_country select {
+	float: right;
+font-size: 13px;
+color: #5b5b5b;
+font-family: "segoe ui", Tahoma;
+margin-left: 15px;
+width: 90px;
+padding: 4px 1px;
+ height: 30px;
+}
+.wrapper {
+	width:520px;
+	height:513px;
+	clear:both;
+	padding-top:47px;
+}
+.mornning {
+	background:url(images/sunny.jpg);
+}
+.sunset {
+	background:url(images/sunset.jpg);
+}
+.night {
+	background:url(images/night.jpg);
+}
+.weather-result {
+	background:url(images/transparent.png);
+	width:393px;
+	height:440px;
+	margin:0 auto;
+	padding:40px 12px 0 12px;
+}
+.weather-states {
+	width:161px;
+	height:149px;
+	float:left;
+}
+.sunny {
+	background:url(images/sunny.png);
+}
+.cloudy {
+	background:url(images/cloudy.png);
+}
+.rain {
+	background:url(images/rain.png);
+}
+
+.view {
+	text-align:center;
+	width:230px; 
+	color:#fff;
+	font-family:"Myriad Pro" , tahoma;
+	font-size:42px;
+	padding-top:45px;
+	float:left;
+	}
+	.weather_states_title {
+		float:left;
+		width:161px;
+		margin-top:5px;	
+		font-family:"Myriad Pro" , tahoma;
+		font-size:42px;
+		color:#fff;
+		clear:left;
+		text-align:center;
+		}
+	
+	
+	
+	.weather_staticses {
+		width:230px;
+		float:left;
+		font-family:"Segoe UI" , tahoma;
+		font-size:18px;
+		color:#fff;
+		margin-top:10px;
+		}
+	
+	.weather_staticses_1 {
+	float:left;
+	width:110px;
+	margin-left:15px;
+		}
+		
+		.weather_staticses_2 {
+	float:left;
+	width:105px;
+		}
+		
+	.weather-table{
+		width:392px;
+		clear:both;
+		margin-top:100px;
+		font-family:"Myriad Pro" , tahoma;
+		color:#fff;
+		text-align:center;
+		}
+	
+	
+	
+	.day{
+		font-size:26px;
+		}
+		.temp {
+			font-family:"Segoe UI" , tahoma;
+		font-size:18px;
+			}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

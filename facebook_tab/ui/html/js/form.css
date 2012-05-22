@@ -1,0 +1,29 @@
+
+
+.checkbox, .radio {
+	width: 19px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(checkbox.png) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+}
+.radio {
+	background: url(radio.png) no-repeat;
+}
+.select {
+	position: absolute;
+width: 88px;
+height: 30px;
+padding: 0 24px 0 8px;
+color: #5b5b5b;
+font: 12px/32px  arial,sans-serif;
+background: url(../images/select.png) no-repeat right;
+overflow: hidden;
+right: 0;
+}
+
+#selectcountry_id {
+	right:200px;
+	}

@@ -24,6 +24,7 @@ if (LOCAL_MODE) {
     define("FACEBOOK_APPLICATION_SECRET", "8b5c0f3518eedf3ba199c1cbd0e6814c");
     define("FACEBOOK_APPLICATION_URL", "http://fbcommons.activedd.com/weatherforcast/includes/facebook_auth/fb_authenticate.php?code");
 }
+date_default_timezone_set ('Africa/Cairo');
 //weather url
 define("WeatherForecastURL", "http://free.worldweatheronline.com/feed/weather.ashx");
 define("WeatherKeyAPI", "9e471fd5c5151005111909");
