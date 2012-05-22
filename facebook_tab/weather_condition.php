@@ -1,6 +1,6 @@
 <div class="wrapper mornning">
     <div class="weather-result">
-        <div class="weather-states <?= str_replace(" ", "", strtolower($current_weather[0]['weatherDesc'][0]['value'])) ?>"></div>
+        <div class="weather-states <?= str_replace(" ", "_", strtolower($current_weather[0]['weatherDesc'][0]['value'])) ?>"></div>
         <div class="view">
             <?= $city['Name'] ?> <br/>
             <?= $current_weather[0]['temp_C'] . "°-" . $other_weather[0]['tempMinC'] . "°" ?>
