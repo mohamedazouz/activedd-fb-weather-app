@@ -34,11 +34,11 @@
                     } ?>
                 </tr>
                 <tr>
-                    <td><img src="images/small-sunny.png" width="32" height="34" /></td>
-                    <td><img src="images/small-cloudy.png"  width="32" height="34" /></td>
-                    <td> <img src="images/small-rain.png" width="32" height="34" /></td>
-                    <td><img src="images/small-sunny.png"  width="32" height="34" /></td>
-                    <td><img src="images/small-cloudy.png"  width="32" height="34" /></td>
+                    <td><img src="images/small-sunny.png"  /></td>
+                    <td><img src="images/small-cloudy.png"   /></td>
+                    <td> <img src="images/small-rain.png"  /></td>
+                    <td><img src="images/small-sunny.png"   /></td>
+                    <td><img src="images/small-cloudy.png"  /></td>
                 </tr>
                 <tr class="temp">
                     <?php foreach ($other_weather as $value) {

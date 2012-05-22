@@ -11,25 +11,27 @@ body {
 	margin:50px auto 0 auto;
 }
 .select_country {
-	margin-bottom:5px;position: relative;overflow: hidden;
+	margin-bottom:5px;
+	position: relative;
+	overflow: hidden;
 }
 .select_country label {
 	float: right;
-font-size: 13px;
-color: #4396CF;
-font-family: Arial;
-margin-left: 15px;
-margin-top: 7px;
+	font-size: 13px;
+	color: #4396CF;
+	font-family: Arial;
+	margin-left: 15px;
+	margin-top: 7px;
 }
 .select_country select {
 	float: right;
-font-size: 13px;
-color: #5b5b5b;
-font-family: "segoe ui", Tahoma;
-margin-left: 15px;
-width: 90px;
-padding: 4px 1px;
- height: 30px;
+	font-size: 13px;
+	color: #5b5b5b;
+	font-family: "segoe ui", Tahoma;
+	margin-left: 15px;
+	width: 90px;
+	padding: 4px 1px;
+	height: 30px;
 }
 .wrapper {
 	width:520px;
@@ -58,6 +60,58 @@ padding: 4px 1px;
 	height:149px;
 	float:left;
 }
+.view {
+	text-align:center;
+	width:230px;
+	color:#fff;
+	font-family:"Myriad Pro", tahoma;
+	font-size:42px;
+	padding-top:45px;
+	float:left;
+}
+.weather_states_title {
+	float:left;
+	width:161px;
+	margin-top:5px;
+	font-family:"Myriad Pro", tahoma;
+	font-size:42px;
+	color:#fff;
+	clear:left;
+	text-align:center;
+}
+.weather_staticses {
+	width:230px;
+	float:left;
+	font-family:"Segoe UI", tahoma;
+	font-size:18px;
+	color:#fff;
+	margin-top:10px;
+}
+.weather_staticses_1 {
+	float:left;
+	width:110px;
+	margin-left:15px;
+}
+.weather_staticses_2 {
+	float:left;
+	width:105px;
+}
+.weather-table {
+	width:392px;
+	clear:both;
+	margin-top:100px;
+	font-family:"Myriad Pro", tahoma;
+	color:#fff;
+	text-align:center;
+}
+.day {
+	font-size:26px;
+}
+.temp {
+	font-family:"Segoe UI", tahoma;
+	font-size:18px;
+}
+/*******************************/
 .sunny {
 	background:url(images/sunny.png);
 }
@@ -67,78 +121,54 @@ padding: 4px 1px;
 .rain {
 	background:url(images/rain.png);
 }
+.black_low_cloud {
+ background:url(images/icons/black_low_cloud.png)
+}
+.clear {
+	background:url(images/icons/clear.png)
+}
+.heavy_rain {
+	background:url(images/icons/heavy_rain.png)
+}
+.light_drizzle {
+	background:url(images/icons/light_drizzle.png)
+}
+.light_rain {
+	background:url(images/icons/light_rain.png)
+}
+.light_rain_shower {
+	background:url(images/icons/light_rain_shower.png)
+}
+.light_snow {
+	background:url(images/icons/light_snow.png)
+}
+.moderate_or_heavy_rain_shower {
+	background:url(images/icons/moderate_or_heavy_rain_shower.png)
+}
+.moderate_rain {
+	background:url(images/icons/moderate_rain.png)
+}
+.moderat_or_heavy_rain_in_area_with_thunder {
+	background:url(images/icons/moderat_or_heavy_rain_in_area_with_thunder.png)
+}
+.overcast {
+	background:url(images/icons/overcast.png)
+}
+.partly_cloudy {
+	background:url(images/icons/partly_cloudy.png)
+}
+.patchy_light_drizzle {
+	background:url(images/icons/patchy_light_drizzle.png)
+}
+.patchy_rain_nearby {
+	background:url(images/icons/patchy_rain_nearby.png)
+}
+.sunny {
+	background:url(images/icons/sunny.png)
+}
+.thundery_outbreaks_in_nearby , .patchy_light_rain_in_area_with_thunder{
+	background:url(images/icons/thundery_outbreaks_in_nearby.png)
+}
 
-.view {
-	text-align:center;
-	width:230px; 
-	color:#fff;
-	font-family:"Myriad Pro" , tahoma;
-	font-size:42px;
-	padding-top:45px;
-	float:left;
-	}
-	.weather_states_title {
-		float:left;
-		width:161px;
-		margin-top:5px;	
-		font-family:"Myriad Pro" , tahoma;
-		font-size:42px;
-		color:#fff;
-		clear:left;
-		text-align:center;
-		}
-	
-	
-	
-	.weather_staticses {
-		width:230px;
-		float:left;
-		font-family:"Segoe UI" , tahoma;
-		font-size:18px;
-		color:#fff;
-		margin-top:10px;
-		}
-	
-	.weather_staticses_1 {
-	float:left;
-	width:110px;
-	margin-left:15px;
-		}
-		
-		.weather_staticses_2 {
-	float:left;
-	width:105px;
-		}
-		
-	.weather-table{
-		width:392px;
-		clear:both;
-		margin-top:100px;
-		font-family:"Myriad Pro" , tahoma;
-		color:#fff;
-		text-align:center;
-		}
-	
-	
-	
-	.day{
-		font-size:26px;
-		}
-		.temp {
-			font-family:"Segoe UI" , tahoma;
-		font-size:18px;
-			}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+/**************************/
