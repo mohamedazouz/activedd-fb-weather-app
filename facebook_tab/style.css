@@ -51,9 +51,10 @@ body {
 .weather-result {
 	background:url(images/transparent.png);
 	width:393px;
-	height:440px;
+	height:460px;
 	margin:0 auto;
-	padding:40px 12px 0 12px;
+	padding:20px 12px 0 12px;
+	position: relative;
 }
 .weather-states {
 	width:161px;
@@ -66,7 +67,6 @@ body {
 	color:#fff;
 	font-family:"Myriad Pro", tahoma;
 	font-size:42px;
-	padding-top:45px;
 	float:left;
 }
 .weather_states_title {
@@ -99,10 +99,11 @@ body {
 .weather-table {
 	width:392px;
 	clear:both;
-	margin-top:100px;
 	font-family:"Myriad Pro", tahoma;
 	color:#fff;
 	text-align:center;
+	position: absolute;
+bottom: 9px;
 }
 .day {
 	font-size:26px;
@@ -127,9 +128,10 @@ body {
 .clear {
 	background:url(images/icons/clear.png)
 }
-.heavy_rain {
+.heavy_rain  , .torrential_rain_shower , .heavy_rain_night  , .torrential_rain_shower_night {
 	background:url(images/icons/heavy_rain.png)
 }
+
 .light_drizzle {
 	background:url(images/icons/light_drizzle.png)
 }
@@ -139,16 +141,20 @@ body {
 .light_rain_shower {
 	background:url(images/icons/light_rain_shower.png)
 }
-.light_snow {
+.light_snow , .light_snow_showers {
 	background:url(images/icons/light_snow.png)
 }
-.moderate_or_heavy_rain_shower {
+.moderate_or_heavy_rain_shower , .moderate_rain_at_times , .heavy_rain_at_times  {
 	background:url(images/icons/moderate_or_heavy_rain_shower.png)
+}
+
+.moderate_or_heavy_rain_shower_night , .moderate_rain_at_times , .heavy_rain_at_times_night  {
+	background:url(images/icons/moderate_or_heavy_rain_shower_night.png)
 }
 .moderate_rain {
 	background:url(images/icons/moderate_rain.png)
 }
-.moderat_or_heavy_rain_in_area_with_thunder {
+.moderat_or_heavy_rain_in_area_with_thunder , .poderate_or_heavy_rain_in_area_with_thunder , .poderate_or_heavy_rain_in_area_with_thunder_night  {
 	background:url(images/icons/moderat_or_heavy_rain_in_area_with_thunder.png)
 }
 .overcast {
@@ -166,9 +172,49 @@ body {
 .sunny {
 	background:url(images/icons/sunny.png)
 }
-.thundery_outbreaks_in_nearby , .patchy_light_rain_in_area_with_thunder{
+.thundery_outbreaks_in_nearby , .patchy_light_rain_in_area_with_thunder , .patchy_light_snow_in_area_with_thunder {
 	background:url(images/icons/thundery_outbreaks_in_nearby.png)
 }
+.mist{
+	background:url(images/icons/mist.png)
+}
+
+.patchy_light_snow_in_area_with_thunder_night , .patchy_light_rain_in_area_with_thunder_night{
+	background:url(images/icons/patchy_light_snow_in_area_with_thunder_night.png)
+}
+
+.moderate_or_heavy_showers_of_ice_pellets  , .moderate_or_heavy_showers_of_ice_pellets_night , .ice_pellets , .ice_pellets_night {
+
+background:url(images/icons/moderate_or_heavy_showers_of_ice_pellets.png);
+}
+.light_showers_of_ice_pellets  , .moderate_or_heavy_sleet_showers , .light_sleet_showers{
+background:url(images/icons/light_showers_of_ice_pellets.png);
+}
+
+.light_showers_of_ice_pellets_night , .moderate_or_heavy_sleet_showers_night , .light_sleet_showers_night{
+background:url(images/icons/light_showers_of_ice_pellets_night.png);
+}
+.moderate_or_heavy_snow_showers  , .patchy_heavy_snow{
+background:url(images/icons/moderate_or_heavy_snow_in_area_with_thunder.png);
+
+}
+
+.moderate_or_heavy_snow_showers_night  , .patchy_heavy_snow_night{
+background:url(images/icons/moderate_or_heavy_snow_in_area_with_thunder_night.png);
+
+}
+
+.light_snow_night , .light_snow_showers_night {
+	background:url(images/icons/light_snow_night.png)
+}
+
+.heavy_snow , .heavy_snow_night {
+	background:url(images/icons/heavy_snow.png);
 
 
+}
+.moderate_snow  , .moderate_snow_night , .patchy_moderate_snow , .patchy_moderate_snow_night {
+	background:url(images/icons/moderate_snow.png);
+
+}
 /**************************/

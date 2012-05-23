@@ -2,8 +2,10 @@
     <div class="weather-result">
         <div class="weather-states <?= str_replace(" ", "_", strtolower($current_weather[0]['weatherDesc'][0]['value'])) ?>"></div>
         <div class="view">
-            <?= $city['Name'] ?> <br/>
-            <?= $current_weather[0]['temp_C'] . "°-" . $other_weather[0]['tempMinC'] . "°" ?>
+		<table width="230" height="150" border="0"><tr><td valgin="middle"><?= $city['Name'] ?> <br/>
+            <?= $current_weather[0]['temp_C'] . "°-" . $other_weather[0]['tempMinC'] . "°" ?></td></tr></table>
+            
+			
         </div>
         <div class="weather_states_title"> <?= $current_weather[0]['weatherDesc'][0]['value'] ?></div>
         <div class="weather_staticses">
@@ -36,7 +38,7 @@
                 <tr>
                     <td><img src="images/small-sunny.png"  /></td>
                     <td><img src="images/small-cloudy.png"   /></td>
-                    <td> <img src="images/small-rain.png"  /></td>
+                    <td> <img src="images/patchy_rain_nearby-small.png"  /></td>
                     <td><img src="images/small-sunny.png"   /></td>
                     <td><img src="images/small-cloudy.png"  /></td>
                 </tr>
