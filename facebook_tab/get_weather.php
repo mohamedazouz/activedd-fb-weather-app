@@ -18,7 +18,6 @@ if ($_POST['city_id']) {
 
     $num_of_days = "&num_of_days=5";
     $url = WeatherForecastURL . "?key=" . WeatherKeyAPI . "&q=" . $city_ . "&format=json" . $num_of_days;
-echo $url;
     $response_weather = file_get_contents($url);
     $response_weather = json_decode($response_weather, true);
     $current_weather = $response_weather['data']['current_condition'];
