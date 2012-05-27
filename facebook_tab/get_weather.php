@@ -22,7 +22,7 @@ if ($_POST['city_id']) {
     $response_weather = json_decode($response_weather, true);
     $current_weather = $response_weather['data']['current_condition'];
     $other_weather = $response_weather['data']['weather'];
-    
+
 //    $out = array($jsonData);
 //
 //    for ($i = 0; $i < 5; $i++) {

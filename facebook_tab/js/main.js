@@ -23,9 +23,7 @@ $(function(){
     var city=$("#default_city").val()?$("#default_city").val():"608";
     getWeather(city,function(response){
         $("#weather_condition").html(response);
-    });
-
-    
+    });  
 })
 
 function getWeather(value,callback){
