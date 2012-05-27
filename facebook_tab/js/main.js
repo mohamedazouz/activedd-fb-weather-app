@@ -14,6 +14,7 @@ $(function(){
     });
     $("#city").change(function(){
         if($(this).val()){ 
+		$("#weather_condition").html('<div class="loading"></div>');
             getWeather($(this).val(),function(response){
                 $("#weather_condition").html(response);
             });
