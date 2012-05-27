@@ -14,12 +14,23 @@ $(function(){
     });
     $("#city").change(function(){
         if($(this).val()){ 
-            $.post("get_weather.php", {
-                "city_id":$(this).val()
-            }, function(response){
+            getWeather($(this).val(),function(response){
                 $("#weather_condition").html(response);
-            })
+            });
         }
     });
+    var city=$("#default_city").val()?$("#default_city").val():"608";
+    getWeather(city,function(response){
+        $("#weather_condition").html(response);
+    });
+
     
 })
+
+function getWeather(value,callback){
+    $.post("get_weather.php", {
+        "city_id":value
+    }, function(response){
+        callback(response);
+    })
+}

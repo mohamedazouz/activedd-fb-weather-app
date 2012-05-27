@@ -30,7 +30,9 @@
                 <label>COUNTRY</label>
             </div>
             <div style="clear:both"></div>
+            <input type="hidden" value="<?= $default_city['ID'] ?>" id="default_city"/>
             <div id="weather_condition">
+
             </div>
         </div>
     </body>
