@@ -10,18 +10,26 @@ body {
 	width:520px;
 	margin:50px auto 0 auto;
 }
+#weather_condition {
+margin-top: -43px;
+width: 520px;
+height: 560px;
+}
 .select_country {
 	margin-bottom:5px;
 	position: relative;
 	overflow: hidden;
+	margin-right: 52px;
 }
 .select_country label {
 	float: right;
-	font-size: 13px;
-	color: #4396CF;
-	font-family: Arial;
-	margin-left: 15px;
-	margin-top: 7px;
+	font-size: 14px;
+color: white;
+font-family: Arial;
+margin-left: 15px;
+margin-top: 7px;
+font-weight: bold;
+	
 }
 .select_country select {
 	float: right;
