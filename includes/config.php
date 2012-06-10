@@ -13,6 +13,7 @@ if (LOCAL_MODE) {
     define("DB_DATABASE", "weather");
     define("FACEBOOK_APPLICATION_ID", "132288390221814");
     define("FACEBOOK_APPLICATION_SECRET", "4106ee3f534188d928c131e0ee62cfe5");
+    define("LOCAL_TIME", "0");
     define("FACEBOOK_APPLICATION_URL", "http://localhost/weatherforcast/includes/facebook_auth/fb_authenticate.php?code");
 } else {
 
@@ -22,9 +23,10 @@ if (LOCAL_MODE) {
     define("DB_DATABASE", "weather");
     define("FACEBOOK_APPLICATION_ID", "289837461064230");
     define("FACEBOOK_APPLICATION_SECRET", "8b5c0f3518eedf3ba199c1cbd0e6814c");
+    define("LOCAL_TIME", "6");
     define("FACEBOOK_APPLICATION_URL", "http://fbcommons.activedd.com/weatherforcast/includes/facebook_auth/fb_authenticate.php?code");
 }
-date_default_timezone_set ('Africa/Cairo');
+date_default_timezone_set('Africa/Cairo');
 //facebook keys
 define("FACEBOOK_AUTH_URL", "https://www.facebook.com/dialog/oauth?client_id=");
 define("FACEBOOK_AUTH_URL_REDIRCT_PARAM", "&redirect_uri=");

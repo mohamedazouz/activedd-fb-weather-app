@@ -22,10 +22,10 @@
                         FB.api('/me',{
                             access_token:accessToken
                         }, function(response) {
-                            var out='<a href="http://facebook.com/'+response.username+'">'+response.name+'</a>';
+                            var out='<a href="http://facebook.com/'+(response.username?response.username:("profile.php?id="+response.id))+'">'+response.name+'</a>';
                             out+= "<br>"+"Wrong account? "+'<a onclick="signout()" href="#">Sign out of Facebook. </a>';
                             $("#facebook-username").html(out);
-                            $("#facebook-upp").attr("src", "https://graph.facebook.com/"+response.username+"/picture")
+                            $("#facebook-upp").attr("src", "https://graph.facebook.com/"+response.id+"/picture")
                             $("#container").show();
                             FB.api('/me/accounts',{
                                 access_token:accessToken
@@ -53,9 +53,6 @@
                             $("#city").show();
                         })
                     }
-                });
-                $("#addrecord").click(function(){
-                
                 });
 
                 $("#addrecord").click(function(){

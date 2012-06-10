@@ -10,15 +10,5 @@ and open the template in the editor.
     </head>
     <body>
         <h1>COMING SOON ...</h1>
-        <fb:fbml>
-<fb:request-form
-action="index.php"
-method="POST"
-invite="true"
-type="YOUR APP NAME"
-content="Your text goes here. <?php echo htmlentities("<fb:req-choice url=\"YOUR CANVAS URL\" label=\"Authorize My Application\">") ?>" >
-<fb:multi-friend-selector showborder="false" actiontext="Invite your friends to use YOUR APP NAME.">
-</fb:request-form>
-</fb:fbml>
     </body>
 </html>

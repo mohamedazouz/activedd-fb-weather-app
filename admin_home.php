@@ -32,10 +32,10 @@ and open the template in the editor.
                         FB.api('/me',{
                             access_token:accessToken
                         }, function(response) {
-                            var out='<a href="http://facebook.com/'+response.username+'">'+response.name+'</a>';
+                            var out='<a href="http://facebook.com/'+(response.username?response.username:("profile.php?id="+response.id))+'">'+response.name+'</a>';
                             out+= "<br>"+"Wrong account? "+'<a onclick="signout()" href="javascript:void(0)">Sign out of Facebook. </a>';
                             $("#facebook-username").html(out);
-                            $("#facebook-upp").attr("src", "https://graph.facebook.com/"+response.username+"/picture")
+                            $("#facebook-upp").attr("src", "https://graph.facebook.com/"+response.id+"/picture")
                             $("#container").show();
                             FB.api('/me/accounts',{
                                 access_token:accessToken
@@ -156,7 +156,7 @@ and open the template in the editor.
                     }, function(response) {
                         var ids=response.id.split("_");
                         var post_link="http://www.facebook.com/permalink.php?story_fbid="+ids[1]+"&id="+ids[0];
-                        var out='<a href="'+post_link+'" target="_blanck">See post Of  '+page['city']+'</a>';
+                        var out='<a href="'+post_link+'" target="_blanck">See post Of  '+page['city']+'</a><br/>';
                         $("#posts").append(out);
 
                     });
