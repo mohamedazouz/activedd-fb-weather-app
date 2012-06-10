@@ -24,7 +24,7 @@ if (LOCAL_MODE) {
     define("FACEBOOK_APPLICATION_SECRET", "8b5c0f3518eedf3ba199c1cbd0e6814c");
     define("FACEBOOK_APPLICATION_URL", "http://fbcommons.activedd.com/weatherforcast/includes/facebook_auth/fb_authenticate.php?code");
 }
-
+date_default_timezone_set ('Africa/Cairo');
 //facebook keys
 define("FACEBOOK_AUTH_URL", "https://www.facebook.com/dialog/oauth?client_id=");
 define("FACEBOOK_AUTH_URL_REDIRCT_PARAM", "&redirect_uri=");
