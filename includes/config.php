@@ -14,7 +14,7 @@ if (LOCAL_MODE) {
     define("FACEBOOK_APPLICATION_ID", "132288390221814");
     define("FACEBOOK_APPLICATION_SECRET", "4106ee3f534188d928c131e0ee62cfe5");
     define("LOCAL_TIME", "0");
-    define("FACEBOOK_APPLICATION_URL", "http://localhost/weatherforcast/includes/facebook_auth/fb_authenticate.php?code");
+    define("FACEBOOK_APPLICATION_URL", "http://localhost/weather_application/includes/facebook_auth/fb_authenticate.php?code");
 } else {
 
     define("DB_HOST", "localhost");

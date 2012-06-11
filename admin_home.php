@@ -18,6 +18,7 @@ and open the template in the editor.
             };
             function signout(){
                 FB.logout(function(response) {
+                    location.href="index.php";
                     $("#user-loginned").hide();
                 });
             }

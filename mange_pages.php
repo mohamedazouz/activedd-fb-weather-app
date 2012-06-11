@@ -11,6 +11,12 @@
                     return a.charAt(0).toUpperCase() + a.substr(1).toLowerCase();
                 });
             };
+            function signout(){
+                FB.logout(function(response) {
+                    location.href="index.php";
+                    $("#user-loginned").hide();
+                });
+            }
             $(document).ready(function(){
 
                 id=<?php echo FACEBOOK_APPLICATION_ID ?>;
@@ -101,8 +107,8 @@
         </script>
     </head>
     <body>
-<!--        <h1>M H D M Y FilePath</h1>
-        <h1>5 11 * * * /asdasd</h1>-->
+        <!--        <h1>M H D M Y FilePath</h1>
+                <h1>5 11 * * * /asdasd</h1>-->
         <div id="fb-root"></div>
         <div id="container" style="display: none">
             <br/>
