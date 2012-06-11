@@ -5,12 +5,8 @@
 echo $city['Name']; ?></td>
     <td><?php
         $hour = ($rec['hour'] + LOCAL_TIME);
-        if ($hour >= 23) {
-            if ($hour == 23) {
-                $hour = 0;
-            } else {
-                $hour = $hour - 23;
-            }
+        if ($hour > 23) {
+            $hour = $hour - 23 - 1;
         }
         echo $hour;
 ?></td>

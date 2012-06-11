@@ -3,11 +3,8 @@
 require_once '../includes/init.php';
 
 $hour = ($_POST['hour'] - LOCAL_TIME);
-if ($hour <= 0) {
-    if ($hour == -6) {
-        $hour++;
-    }
-    $hour = 23 - abs($hour);
+if ($hour < 0) {
+    $hour = 23 - abs($hour) + 1;
 }
 $_POST['hour'] = $hour;
 $id = $db->insert("post_timer", $_POST);
